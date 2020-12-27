@@ -1,0 +1,1280 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Version: 2019.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2019 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+
+html
+{
+	scroll-behavior: smooth;
+}
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto",sans-serif;
+}
+a
+{
+	text-decoration: none;
+}
+ul
+{
+	list-style: none;
+}
+
+/*top bar*/
+#header
+{
+	display: flex;
+	justify-content: space-around;
+	background:#202040;
+	align-items: center;
+	padding: 1.5% 1.5%;
+}
+.fixed
+{
+	position: fixed;
+	z-index: 999;
+	animation:anim 0.5s;
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+}
+@keyframes anim {
+	from 
+	{
+		opacity: 0;
+		transform: translateY(-70px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+#header #site-title h1 a
+{
+	color: white;
+	font-size: 2.4vw;
+}
+#menu ul li
+{
+	display: inline-block;
+}
+#menu ul li a
+{
+	color: white;
+	padding: 20px;
+	font-size: 1.5vw;
+}
+#menu ul li a:hover
+{
+	background-color: #FF5C97;
+}
+
+.jumbotron1
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#202040;
+}
+.jumbotron1 .card
+{
+	width: 35%;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-bottom:10%; 
+	margin-top: 2%;
+}
+.jumbotron1 .card h1
+{
+	color: white;
+	font-size: 5vw;
+}
+.jumbotron1 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron1 .card p
+{
+	color: white;
+	font-size: 1.5vw;
+	letter-spacing: 1px;
+	margin-top: 7%;
+	line-height: 150%;
+	margin-bottom: 15%;
+}
+.jumbotron1 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+	margin-right: 5%;
+}
+.jumbotron1 .card img
+{
+	width: 100%;
+}
+.cari
+{
+	width: 60%;
+	background-color: #ff5c97;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	padding: 1.5%;
+	margin-top: -4%;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+}
+.cari #search .search-field
+{
+	padding: 3%;
+	width: 70%;
+	border-radius: 5px;
+	border:2px solid white;
+}
+.cari #search .search-field:focus
+{
+	outline-color: white;
+}
+.cari #search .search-submit
+{
+	padding: 3%;
+	border-radius: 5px;
+	border:2px solid #202040;
+	background-color: #202040;
+	color: white;
+}
+/*end*/
+
+
+/*tentang Kami*/
+.jumbotron2
+{
+	display: flex;
+	justify-content: center;
+	padding-top: 7%;
+	align-items: center;
+}
+.jumbotron2 .card
+{
+	width: 38%;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-bottom: 5%;
+}
+.jumbotron2 .card img
+{
+	width: 100%;
+}
+.jumbotron2 .card h1
+{
+	color: #2B4B80;
+	font-size: 4vw;
+}
+.jumbotron2 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron2 .card p
+{
+	color: #959DAB;
+	font-size: 1.5vw;
+	line-height: 150%;
+	margin-top: 5%;
+	margin-bottom:10%;
+}
+.jumbotron2 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+}
+/*End*/
+
+/*Galeri*/
+.jumbotron3
+{
+	padding-top: 7%;
+}
+.jumbotron3 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 4vw;
+}
+.jumbotron3 span
+{
+	color: #ff5c97;
+}
+.jumbotron3 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 1.5vw;
+	margin-top: 1%;
+	line-height: 150%;
+}
+.jumbotron3 .galeri
+{
+	margin-top: 5%;
+}
+/*end*/
+
+/*banner*/
+.banner
+{
+	background:url(img/banner.jpg);
+	height: 40vh;
+	margin-top: 5%;
+}
+/*end*/
+
+/*tim kami*/
+.jumbotron4
+{
+	padding-top: 7%;
+}
+.jumbotron4 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 4vw;
+}
+.jumbotron4 span
+{
+	color: #ff5c97;
+}
+.jumbotron4 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 1.5vw;
+	margin-top: 1%;
+	line-height: 150%;
+}
+.jumbotron4 .body
+{
+	
+	display: flex;
+	justify-content: center;
+	
+}
+.jumbotron4 .body .card
+{
+	width: 30%;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 5%;
+}
+.jumbotron4 .body .card img
+{
+	width: 100%;
+	height: 100%;
+}
+.jumbotron4 .body .card .kotak
+{
+	background-color: #202040;
+	border-radius: 5px;
+}
+.jumbotron4 .body .card .kotak h1
+{
+	color: white;
+	font-size: 2vw;
+	padding: 4%;
+}
+.jumbotron4 .body .card .kotak p
+{
+	font-size: 1vw;
+	color: #ff5c97;
+	padding: 4% 0%;
+}
+/*end*/
+
+/*kontak*/
+.jumbotron5
+{
+	background-color: #202040;
+	display: flex;
+	justify-content: center;
+	border-radius: 15px 15px 0px 0px;
+	padding-top: 3%;
+	margin-top: 20%;
+}
+.jumbotron5 .card
+{
+	width: 38%;
+	margin-right: 3%;
+	margin-left: 3%;
+	align-items: center;
+	text-align: center;
+}
+.jumbotron5 .card h1
+{
+	color: white;
+	font-size: 4vw;
+}
+.jumbotron5 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron5 .card p
+{
+	color: white;
+	font-size: 1.5vw;
+	padding-top: 5%;
+}
+.jumbotron5 .card input
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card input:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card textarea
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card textarea:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card .wpcf7-submit
+{
+	width: 30%;
+	background-color: #ff5c97;
+	color: white;
+	border:2px solid #ff5c97;
+	font-size: 1.5vw;
+}
+/*end*/
+
+/*footer*/
+.jumbotron6
+{
+	background:#202040;
+	text-align: center;
+	align-items: center;
+}
+.jumbotron6 p
+{
+	color: white;
+	padding: 3%;
+}
+.jumbotron6 span
+{
+	color: #ff5c97;
+}
+/*end*/
+
+.tombol
+{
+	display: none;
+}
+label .garis
+{
+	width: 30px;
+	height: 5px;
+	margin-top: 15%;
+	background-color: white;
+}
+label .garis1
+{
+	margin-left: 10%;
+}
+.sidebar
+{
+	display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px)
+{
+
+.sidebar
+{
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 80%;
+	background:#ff5c97;
+	align-items: center;
+	text-align: center;
+	padding-top: 10%;
+	display: block;
+	z-index: 1;
+	left: 100%;
+	transition: 2s;
+}
+.sidebar ul li
+{
+	padding-top: 20%;
+}
+.sidebar ul li a
+{
+	color: white;
+	font-size: 5vw;
+}
+
+/*top bar*/
+#header
+{
+	display: flex;
+	justify-content: space-around;
+	background:#202040;
+	align-items: center;
+	padding: 1.5% 1.5%;
+}
+.fixed
+{
+	position: fixed;
+	z-index: 999;
+	animation:anim 0.5s;
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+	align-items: center;
+}
+@keyframes anim {
+	from 
+	{
+		opacity: 0;
+		transform: translateY(-70px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+#header #site-title h1 a
+{
+	color: white;
+	font-size: 6vw;
+}
+#menu
+{
+	display: none;
+}
+#menu ul li
+{
+	display: inline-block;
+}
+#menu ul li a
+{
+	color: white;
+	padding: 20px;
+	font-size: 1.5vw;
+}
+#menu ul li a:hover
+{
+	background-color: #FF5C97;
+}
+
+.jumbotron1
+{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background:#202040;
+	text-align: center;
+}
+.jumbotron1 .card
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-bottom:10%; 
+	margin-top: 2%;
+}
+.jumbotron1 .card h1
+{
+	color: white;
+	font-size: 9vw;
+	padding: 20px;
+}
+.jumbotron1 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron1 .card p
+{
+	color: white;
+	font-size: 3vw;
+	letter-spacing: 1px;
+	margin-top: 7%;
+	line-height: 150%;
+	margin-bottom: 15%;
+	padding: 20px;
+}
+.jumbotron1 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+	margin-right: 0%;
+
+}
+.jumbotron1 .card img
+{
+	width: 70%;
+}
+.tim
+{
+	display: none;
+}
+.cari
+{
+	width: 70%;
+	background-color: #ff5c97;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	padding: 3%;
+	margin-top: -4%;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+}
+.cari #search .search-field
+{
+	padding: 3%;
+	width: 70%;
+	border-radius: 5px;
+	border:2px solid white;
+}
+.cari #search .search-field:focus
+{
+	outline-color: white;
+}
+.cari #search .search-submit
+{
+	padding: 3%;
+	border-radius: 5px;
+	border:2px solid #202040;
+	background-color: #202040;
+	color: white;
+}
+/*end*/
+
+
+/*tentang Kami*/
+.jumbotron2
+{
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 7%;
+	align-items: center;
+	text-align: center;
+}
+.jumbotron2 .card
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-bottom: 5%;
+}
+.jumbotron2 .card img
+{
+	width: 80%;
+}
+.jumbotron2 .card h1
+{
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron2 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron2 .card p
+{
+	color: #959DAB;
+	font-size: 3vw;
+	line-height: 150%;
+	margin-top: 5%;
+	margin-bottom:10%;
+	padding: 20px;
+}
+.jumbotron2 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+}
+/*End*/
+
+
+/*Galeri*/
+.jumbotron3
+{
+	padding-top: 7%;
+}
+.jumbotron3 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron3 span
+{
+	color: #ff5c97;
+}
+.jumbotron3 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 3vw;
+	margin-top: 1%;
+	line-height: 150%;
+}
+.jumbotron3 .galeri
+{
+	margin-top: 5%;
+}
+/*end*/
+
+/*banner*/
+.banner
+{
+	background:url(img/banner1.jpg);
+	height: 40vh;
+	margin-top: 5%;
+}
+/*end*/
+
+/*tim kami*/
+.jumbotron4
+{
+	padding-top: 7%;
+}
+.jumbotron4 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron4 span
+{
+	color: #ff5c97;
+}
+.jumbotron4 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 3vw;
+	margin-top: 1%;
+	line-height: 150%;
+	padding: 20px;
+}
+.jumbotron4 .body
+{
+	
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	
+}
+.jumbotron4 .body .card
+{
+	width: 60%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.jumbotron4 .body .card img
+{
+	width: 100%;
+	height: 100%;
+}
+.jumbotron4 .body .card .kotak
+{
+	background-color: #202040;
+	border-radius: 5px;
+}
+.jumbotron4 .body .card .kotak h1
+{
+	color: white;
+	font-size: 4vw;
+	padding: 4%;
+}
+.jumbotron4 .body .card .kotak p
+{
+	font-size: 2vw;
+	color: #ff5c97;
+	padding: 4% 0%;
+}
+/*end*/
+
+/*kontak*/
+.jumbotron5
+{
+	background-color: #202040;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 15px 15px 0px 0px;
+	padding-top: 3%;
+	margin-top: 20%;
+}
+.jumbotron5 .card
+{
+	width: 100%;
+	margin-right: 0%;
+	margin-left: 0%;
+	align-items: center;
+	text-align: center;
+	margin-top: 10%;
+}
+.jumbotron5 .card h1
+{
+	color: white;
+	font-size: 6vw;
+}
+.jumbotron5 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron5 .card p
+{
+	color: white;
+	font-size: 3vw;
+	padding-top: 5%;
+}
+.jumbotron5 .card input
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card input:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card textarea
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card textarea:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card .wpcf7-submit
+{
+	width: 30%;
+	background-color: #ff5c97;
+	color: white;
+	border:2px solid #ff5c97;
+	font-size: 3vw;
+}
+/*end*/
+
+/*footer*/
+.jumbotron6
+{
+	background:#202040;
+	text-align: center;
+	align-items: center;
+}
+.jumbotron6 p
+{
+	color: white;
+	padding: 3%;
+}
+.jumbotron6 span
+{
+	color: #ff5c97;
+}
+/*end*/
+
+.tombol
+{
+	display: block;
+}
+label .garis
+{
+	width: 30px;
+	height: 1vh;
+	margin-top: 15%;
+	background-color: white;
+}
+label .garis1
+{
+	margin-left: 10%;
+}
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px)
+{
+
+
+
+
+.sidebar
+{
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 80%;
+	background:#ff5c97;
+	align-items: center;
+	text-align: center;
+	padding-top: 10%;
+	z-index: 1;
+	display: block;
+	left: 100%;
+	transition: 2s;
+}
+.sidebar ul li
+{
+	padding-top: 20%;
+}
+.sidebar ul li a
+{
+	color: white;
+	font-size: 5vw;
+}
+
+/*top bar*/
+#header
+{
+	display: flex;
+	justify-content: space-around;
+	background:#202040;
+	align-items: center;
+	padding: 1.5% 1.5%;
+}
+.fixed
+{
+	position: fixed;
+	z-index: 999;
+	animation:anim 0.5s;
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+	align-items: center;
+}
+@keyframes anim {
+	from 
+	{
+		opacity: 0;
+		transform: translateY(-70px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+#header #site-title h1 a
+{
+	color: white;
+	font-size: 6vw;
+}
+#menu
+{
+	display: none;
+}
+#menu ul li
+{
+	display: inline-block;
+}
+#menu ul li a
+{
+	color: white;
+	padding: 20px;
+	font-size: 1.5vw;
+}
+#menu ul li a:hover
+{
+	background-color: #FF5C97;
+}
+
+.jumbotron1
+{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background:#202040;
+	text-align: center;
+}
+.jumbotron1 .card
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-bottom:10%; 
+	margin-top: 2%;
+}
+.jumbotron1 .card h1
+{
+	color: white;
+	font-size: 9vw;
+	padding: 20px;
+}
+.jumbotron1 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron1 .card p
+{
+	color: white;
+	font-size: 3vw;
+	letter-spacing: 1px;
+	margin-top: 7%;
+	line-height: 150%;
+	margin-bottom: 15%;
+	padding: 20px;
+}
+.jumbotron1 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+	margin-right: 0%;
+
+}
+.jumbotron1 .card img
+{
+	width: 70%;
+}
+.tim
+{
+	display: none;
+}
+.cari
+{
+	width: 70%;
+	background-color: #ff5c97;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	padding: 3%;
+	margin-top: -4%;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.13);
+}
+.cari #search .search-field
+{
+	padding: 3%;
+	width: 70%;
+	border-radius: 5px;
+	border:2px solid white;
+}
+.cari #search .search-field:focus
+{
+	outline-color: white;
+}
+.cari #search .search-submit
+{
+	padding: 3%;
+	border-radius: 5px;
+	border:2px solid #202040;
+	background-color: #202040;
+	color: white;
+}
+/*end*/
+
+
+/*tentang Kami*/
+.jumbotron2
+{
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 7%;
+	align-items: center;
+	text-align: center;
+}
+.jumbotron2 .card
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-bottom: 5%;
+}
+.jumbotron2 .card img
+{
+	width: 80%;
+}
+.jumbotron2 .card h1
+{
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron2 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron2 .card p
+{
+	color: #959DAB;
+	font-size: 3vw;
+	line-height: 150%;
+	margin-top: 5%;
+	margin-bottom:10%;
+	padding: 20px;
+}
+.jumbotron2 .card a
+{
+	color: white;
+	padding: 5% 6%;
+	background-color: #ff5c97;
+}
+/*End*/
+
+
+/*Galeri*/
+.jumbotron3
+{
+	padding-top: 7%;
+}
+.jumbotron3 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron3 span
+{
+	color: #ff5c97;
+}
+.jumbotron3 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 3vw;
+	margin-top: 1%;
+	line-height: 150%;
+}
+.jumbotron3 .galeri
+{
+	margin-top: 5%;
+	width: 100%;
+}
+/*end*/
+
+/*banner*/
+.banner
+{
+	background:url(img/banner1.jpg);
+	height: 40vh;
+	margin-top: 5%;
+}
+/*end*/
+
+/*tim kami*/
+.jumbotron4
+{
+	padding-top: 7%;
+}
+.jumbotron4 h1
+{
+	text-align: center;
+	align-items: center;
+	color: #2B4B80;
+	font-size: 6vw;
+}
+.jumbotron4 span
+{
+	color: #ff5c97;
+}
+.jumbotron4 p
+{
+	text-align: center;
+	align-items: center;
+	color:  #959DAB;
+	font-size: 3vw;
+	margin-top: 1%;
+	line-height: 150%;
+	padding: 20px;
+}
+.jumbotron4 .body
+{
+	
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	
+}
+.jumbotron4 .body .card
+{
+	width: 60%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.jumbotron4 .body .card img
+{
+	width: 100%;
+	height: 100%;
+}
+.jumbotron4 .body .card .kotak
+{
+	background-color: #202040;
+	border-radius: 5px;
+}
+.jumbotron4 .body .card .kotak h1
+{
+	color: white;
+	font-size: 4vw;
+	padding: 4%;
+}
+.jumbotron4 .body .card .kotak p
+{
+	font-size: 2vw;
+	color: #ff5c97;
+	padding: 4% 0%;
+}
+/*end*/
+
+/*kontak*/
+.jumbotron5
+{
+	background-color: #202040;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 15px 15px 0px 0px;
+	padding-top: 3%;
+	margin-top: 20%;
+}
+.jumbotron5 .card
+{
+	width: 100%;
+	margin-right: 0%;
+	margin-left: 0%;
+	align-items: center;
+	text-align: center;
+	margin-top: 10%;
+}
+.jumbotron5 .card h1
+{
+	color: white;
+	font-size: 6vw;
+}
+.jumbotron5 .card span
+{
+	color: #ff5c97;
+}
+.jumbotron5 .card p
+{
+	color: white;
+	font-size: 3vw;
+	padding-top: 5%;
+}
+.jumbotron5 .card input
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card input:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card textarea
+{
+	padding:3%;
+	margin-top: 4%;
+	border-radius:5px;
+	width: 70%;
+	color: #FF5C97;
+}
+.jumbotron5 .card textarea:focus
+{
+	outline-color: white;
+}
+.jumbotron5 .card .wpcf7-submit
+{
+	width: 30%;
+	background-color: #ff5c97;
+	color: white;
+	border:2px solid #ff5c97;
+	font-size: 3vw;
+}
+/*end*/
+
+/*footer*/
+.jumbotron6
+{
+	background:#202040;
+	text-align: center;
+	align-items: center;
+}
+.jumbotron6 p
+{
+	color: white;
+	padding: 3%;
+}
+.jumbotron6 span
+{
+	color: #ff5c97;
+}
+/*end*/
+
+.tombol
+{
+	display: block;
+}
+label .garis
+{
+	width: 30px;
+	height: 5px;
+	margin-top: 15%;
+	background-color: white;
+}
+label .garis1
+{
+	margin-left: 10%;
+}
+
+
+
+
+}
+
+
+
